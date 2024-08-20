@@ -1,1 +1,1 @@
-# Ensembling-LeNet-with-LSTM-for-Time-Series-Prediction
+# Ensembling-LeNet-with-LSTM-for-Time-Series-Predictions
