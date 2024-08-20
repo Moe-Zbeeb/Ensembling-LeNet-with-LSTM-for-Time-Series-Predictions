@@ -1,0 +1,4 @@
+Training data size: 817
+Test data size: 441
+Training data shape: (817, 1)
+Test data shape: (441, 1)

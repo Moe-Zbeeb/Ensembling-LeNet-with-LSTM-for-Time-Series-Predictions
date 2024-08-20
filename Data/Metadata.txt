@@ -1,8 +1,8 @@
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 2518 entries, 0 to 2517
-Data columns (total 1 columns):
- #   Column  Non-Null Count  Dtype  
----  ------  --------------  -----  
- 0    Open   2518 non-null   float64
+<class 'pandas.core.series.Series'>
+RangeIndex: 1258 entries, 0 to 1257
+Series name: close
+Non-Null Count  Dtype  
+--------------  -----  
+1258 non-null   float64
 dtypes: float64(1)
-memory usage: 19.8 KB
+memory usage: 10.0 KB

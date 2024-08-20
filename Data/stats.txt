@@ -1,0 +1,8 @@
+Mean: close    167.723998
+dtype: float64
+Standard Deviation: close    56.850796
+dtype: float64
+Maximum Value: close    327.2
+dtype: float64
+Minimum Value: close    90.34
+dtype: float64
