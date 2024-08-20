@@ -22,6 +22,8 @@ In this equation, `nh` and `nw` are the output dimensions calculated by the form
 Pooling is another fundamental operation, where a specified filter size from the input is reduced by taking the average or maximum value, depending on the type of pooling used. Unlike convolution, pooling keeps the number of channels (`nc'`) the same but reduces the spatial dimensions (`nh` and `nw`), unless padding is applied. This operation helps the model become more invariant to shifts and distortions in the input, by focusing on the most salient features.
 
 A classic example of these operations is found in the LeNet architecture, developed by Yann LeCun ([source](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf). LeNet demonstrates the power of combining convolution and pooling by progressively shrinking the spatial dimensions (`nh` and `nw`) while increasing the number of channels (`nc'`). This process enables the network to learn increasingly complex features at each layer, which is essential for capturing the underlying patterns in the data.
+
+
 ![image](https://github.com/user-attachments/assets/c6c36fc9-b260-48a8-a15b-28b7ba30f003) 
 ### Long Short-Term Memory: A Time Series Pattern Finder
 
