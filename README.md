@@ -21,7 +21,7 @@ In this equation, `nh` and `nw` are the output dimensions calculated by the form
 
 Pooling is another fundamental operation, where a specified filter size from the input is reduced by taking the average or maximum value, depending on the type of pooling used. Unlike convolution, pooling keeps the number of channels (`nc'`) the same but reduces the spatial dimensions (`nh` and `nw`), unless padding is applied. This operation helps the model become more invariant to shifts and distortions in the input, by focusing on the most salient features.
 
-A classic example of these operations is found in the LeNet architecture, developed by Yann LeCun ([source](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf). LeNet demonstrates the power of combining convolution and pooling by progressively shrinking the spatial dimensions (`nh` and `nw`) while increasing the number of channels (`nc'`). This process enables the network to learn increasingly complex features at each layer, which is essential for capturing the underlying patterns in the data.
+A classic example of these operations is found in the LeNet architecture, developed by Yann LeCun ([sthece](http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf). LeNet demonstrates the power of combining convolution and pooling by progressively shrinking the spatial dimensions (`nh` and `nw`) while increasing the number of channels (`nc'`). This process enables the network to learn increasingly complex features at each layer, which is essential for capturing the underlying patterns in the data.
 
 
 ![image](https://github.com/user-attachments/assets/c6c36fc9-b260-48a8-a15b-28b7ba30f003) 
@@ -39,11 +39,11 @@ Read more about the fundamentals of Recurrent Neural Networks (RNN) and Long Sho
 ### Ensembling The Beasts  
 ![image](https://github.com/user-attachments/assets/f1453f7b-2ac7-4f4e-9839-30b280997386)
 
-Our model architecture is a hybrid approach that leverages the power of Convolutional Neural Networks (CNNs) for feature extraction and Long Short-Term Memory (LSTM) networks for capturing temporal dependencies. The CNN layers focus on automatically extracting intricate features from the time series data, while the LSTM layers model patterns over time. This architecture has shown to outperform other approaches, especially when scaled to handle more challenging stocks, which is the ultimate goal. The scalability of this model is key to its success in tackling the complex and volatile nature of stock market data.   
+Model architecture is a hybrid approach that leverages the power of Convolutional Neural Networks (CNNs) for feature extraction and Long Short-Term Memory (LSTM) networks for capturing temporal dependencies. The CNN layers focus on automatically extracting intricate features from the time series data, while the LSTM layers model patterns over time. This architecture has shown to outperform other approaches, especially when scaled to handle more challenging stocks, which is the ultimate goal. The scalability of this model is key to its success in tackling the complex and volatile nature of stock market data.   
 
 
 ### Scaling the Model
-Scaling our model is the key to its effectiveness, particularly when dealing with more complex and volatile stocks. The architecture is designed to be highly scalable, allowing it to adapt to varying levels of difficulty in stock prediction. As the model is scaled to harder stocks, it leverages the deep feature extraction capabilities of the CNN layers alongside the robust temporal pattern recognition of the LSTM layers. This scalability is crucial for achieving the goal of accurately predicting stock prices in increasingly challenging market conditions, making the model versatile and powerful in real-world applications.
+Scaling the model is the key to its effectiveness, particularly when dealing with more complex and volatile stocks. The architecture is designed to be highly scalable, allowing it to adapt to varying levels of difficulty in stock prediction. As the model is scaled to harder stocks, it leverages the deep feature extraction capabilities of the CNN layers alongside the robust temporal pattern recognition of the LSTM layers. This scalability is crucial for achieving the goal of accurately predicting stock prices in increasingly challenging market conditions, making the model versatile and powerful in real-world applications.
 
 
 
