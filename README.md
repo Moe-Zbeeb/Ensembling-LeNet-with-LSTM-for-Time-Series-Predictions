@@ -36,5 +36,16 @@ LSTMs are designed to address this issue by introducing additional parameters th
 In this project, LSTMs are employed to efficiently scale the network and enhance its ability to model complex temporal patterns in stock price data.
 
 Read more about the fundamentals of Recurrent Neural Networks (RNN) and Long Short-Term Memory (LSTM) networks here: [Fundamentals of Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) Network](https://arxiv.org/abs/1808.03314)
+### Ensembling The Beasts  
+![image](https://github.com/user-attachments/assets/f1453f7b-2ac7-4f4e-9839-30b280997386)
+
+Our model architecture is a hybrid approach that leverages the power of Convolutional Neural Networks (CNNs) for feature extraction and Long Short-Term Memory (LSTM) networks for capturing temporal dependencies. The CNN layers focus on automatically extracting intricate features from the time series data, while the LSTM layers model patterns over time. This architecture has shown to outperform other approaches, especially when scaled to handle more challenging stocks, which is the ultimate goal. The scalability of this model is key to its success in tackling the complex and volatile nature of stock market data.   
+
+
+### Scaling the Model
+Scaling our model is the key to its effectiveness, particularly when dealing with more complex and volatile stocks. The architecture is designed to be highly scalable, allowing it to adapt to varying levels of difficulty in stock prediction. As the model is scaled to harder stocks, it leverages the deep feature extraction capabilities of the CNN layers alongside the robust temporal pattern recognition of the LSTM layers. This scalability is crucial for achieving the goal of accurately predicting stock prices in increasingly challenging market conditions, making the model versatile and powerful in real-world applications.
+
+
+
 
 
