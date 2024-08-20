@@ -6,3 +6,7 @@ This is where Convolutional Neural Networks (CNNs) come into play. Originally de
 **By allowing the time series to define the features themselves better (by keeping the output dimension the same),or enable a more flexible and powerful approach to feature engineering, by expanding the output space.**
 
 In this project, we explore the integration of CNNs with LSTM networks to leverage the strengths of both models. The CNN's ability to automatically extract features from time series data is combined with the LSTM's strength in capturing temporal dependencies, providing a robust solution for stock price prediction.
+
+### LeNet Overview 
+
+![image](https://github.com/user-attachments/assets/49b1fbd6-073d-4c94-8ca4-0d55a5d1777f)
