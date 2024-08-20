@@ -10,3 +10,16 @@ In this project, we explore the integration of CNNs with LSTM networks to levera
 ### LeNet Overview 
 
 ![image](https://github.com/user-attachments/assets/49b1fbd6-073d-4c94-8ca4-0d55a5d1777f)
+#### Convolution Operations and Pooling: Engineering New Features
+
+In Convolutional Neural Networks (CNNs), the convolution operation plays a crucial role in feature engineering by measuring the overlap between a kernel (often called a filter) and the input space. This is done by sliding the kernel across the input, performing element-wise multiplication and summation at each position, and mapping these results to the output space. The process is handled efficiently through loops within CUDA, making it computationally feasible even for large-scale data.
+
+The output dimensions of a convolution operation can be calculated using the following formula:
+dim_of_output = (dim_of_input + 2 * padding_factor - filter_dimension) / striding_factor + 1
+
+In this equation, `nh` and `nw` are the output dimensions calculated by the formula, while `nc'` represents the number of filters used. The result is a feature map that reflects a transformed space, with the filter's learnable parameters being adapted by the network to minimize loss. This effectively means that the convolution operation is not just transforming the data but also discovering and engineering new features that are crucial for reducing prediction error.
+
+Pooling is another fundamental operation, where a specified filter size from the input is reduced by taking the average or maximum value, depending on the type of pooling used. Unlike convolution, pooling keeps the number of channels (`nc'`) the same but reduces the spatial dimensions (`nh` and `nw`), unless padding is applied. This operation helps the model become more invariant to shifts and distortions in the input, by focusing on the most salient features.
+
+A classic example of these operations is found in the LeNet architecture, developed by Yann LeCun ([source](http://yann.lecun.com/exdb/lenet/)). LeNet demonstrates the power of combining convolution and pooling by progressively shrinking the spatial dimensions (`nh` and `nw`) while increasing the number of channels (`nc'`). This process enables the network to learn increasingly complex features at each layer, which is essential for capturing the underlying patterns in the data.
+
